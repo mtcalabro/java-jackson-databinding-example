@@ -1,6 +1,8 @@
 package example.jackson.databinding;
-import com.sun.net.httpserver.HttpServer;
+
 import com.sun.jersey.api.container.httpserver.HttpServerFactory;
+import com.sun.net.httpserver.HttpServer;
+
 import java.io.IOException;
 
 public class PresentationHttpServer {

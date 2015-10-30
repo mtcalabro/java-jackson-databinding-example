@@ -17,7 +17,7 @@ public class JsonMapper {
      * @param data Object to be converted to JSON string
      * @return String json string of Object
      */
-    public static <T> String toJson(T data) {
+    public static <T> String encode(T data) {
         try {
             return jsonMapper.writeValueAsString(data);
         } catch (JsonProcessingException e) {
@@ -36,7 +36,7 @@ public class JsonMapper {
      *
      * @return Class Instance
      */
-    public static <T> T toClassInstance(String data, Class<T> type) {
+    public static <T> T decode(String data, Class<T> type) {
         try {
             return jsonMapper.readValue(data, type);
         } catch (JsonMappingException e) {

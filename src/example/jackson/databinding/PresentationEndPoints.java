@@ -15,7 +15,7 @@ public class PresentationEndPoints {
     public String getPresentations() {
         // Return some cliched textual content
 
-        String presentationArrayJson = JsonMapper.toJson(Presentations.getInstance().getPresentations());
+        String presentationArrayJson = JsonMapper.encode(Presentations.getInstance().getPresentations());
 
         return presentationArrayJson;
     }
@@ -25,7 +25,7 @@ public class PresentationEndPoints {
     @Consumes(MediaType.APPLICATION_JSON)
     public void addPresentation(String postBodyData) {
 
-        Presentation presentation = JsonMapper.toClassInstance(postBodyData, Presentation.class);
+        Presentation presentation = JsonMapper.decode(postBodyData, Presentation.class);
 
         Presentations presentations = Presentations.getInstance();
         presentations.addPresentation(presentation);
