@@ -2,7 +2,7 @@
 Jackson is a multi-purpose Java library for processing JSON data format. The library offers three way to process JSON
 Streaming API, Tree Model and Data Binding. This project is a working example of the libraries Data Binding capabilities.
 
-### About this repo
+### About This Repo
 The containing code within this repo goes beyond a basic working example of the Jackson JSON libaray. I've included a basic example below. 
 What is included is a working example of a RESTful service for adding and retreiving Presentation objects in Java using JAX-RS and Jackson JSON parser.
 
