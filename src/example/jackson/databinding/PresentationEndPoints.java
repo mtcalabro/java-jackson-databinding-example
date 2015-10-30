@@ -31,7 +31,7 @@ public class PresentationEndPoints {
         presentations.addPresentation(presentation);
 
         // printing the presentations added so far
-        for (Presentation p : presentations.getPresentations()) {
+        for (Presentation p : presentations.getPresentations().get(Presentations.KEY)) {
             System.out.println(p.toString());
         }
 
