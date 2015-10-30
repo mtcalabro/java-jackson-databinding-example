@@ -130,7 +130,7 @@ public class JsonMapper {
 ####To JSON
 ```
 Presentation presention = new Presentation();
-// set some values to the presentation here instance...
+// set some values to the presentation instance here...
 
 String json = JsonMapper.toJson(presention);
 ```
