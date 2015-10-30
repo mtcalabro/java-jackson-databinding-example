@@ -9,14 +9,13 @@ What is included is a working example of a RESTful service for adding and retrei
 ###Implementing a somewhat basic working example
 
 ###Step 1. Get some JSON data to map
-This example uses a simple presention object
+This example uses a simple json object which describes a presentation.
 ```
 {"date": "11/01/2015", "time" : "06:00PM", "presenterName" : "Matt", "presentationTopic" : "Jackson-databinding"} 
 ```
 
 ###Step 2. Create a class file in your Java project which models the JSON object
-You can create the model object yourself by hand or use a tool to generate the object. The YouTube video I've provided
-in below in my resources provides a method for generating the class file.
+You can create the model object yourself or use a tool to generate the object. The YouTube example video I've provided a link to below generates the class file from a JSON file.
 ```
 public class Presentation {
 
@@ -71,8 +70,8 @@ public class Presentation {
 
 ```
 
-###Step 3: Use the ObjectMapper class to read or write to or from the class.
-In this case I created a class to handle the writing a class to JSON and instiantiation a class from JSON.
+###Step 3: Use the ObjectMapper class to read or write to and from the class.
+In this case I created a class to handle the writing the class to JSON and instiantiation from JSON.
 
 ```
 import org.codehaus.jackson.JsonParseException;
@@ -136,7 +135,7 @@ Presentation presention = new Presentation();
 String json = JsonMapper.toJson(presention);
 ```
 
-####fromJSON
+####From JSON
 ```
 Presentation presentation = JsonMapper.toClassInstance(postBodyData, Presentation.class);
 ```
