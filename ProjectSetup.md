@@ -27,7 +27,7 @@
 
 2. Update the version of Jersey from 2.2 to 1.12
 
-![jersey-version](md_assets/jersey-version.png)
+![jersey-version](md_assets/jersey-version-new.png)
 
 3. Navigate to the Project Artifacts
 
