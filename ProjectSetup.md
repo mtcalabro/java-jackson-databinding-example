@@ -31,9 +31,9 @@
 
 3. Navigate to the Project Artifacts
 
-4. Add a new Artifact of type "WebApplication: Exploded"
+4. An Artifact of type "WebApplication: Exploded" should already exist. If not, create one.
 
-5. Under "Available Elements", double-click on all items listed
+5. Under "Available Elements", double-click on all items listed. Jersey-1.12 should be the only missing element.
 
 6. The Artifacts should look like this:
 
