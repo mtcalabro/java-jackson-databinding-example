@@ -141,15 +141,15 @@ Presentation presentation = JsonMapper.toClassInstance(postBodyData, Presentatio
 ```
 
 ###Resources:
-####FastXML jackson: [databind:](https://github.com/FasterXML/jackson-databind)
+####FastXML jackson: [databind](https://github.com/FasterXML/jackson-databind)
 
-####FastXML jackson: [annotations:](https://github.com/FasterXML/jackson-annotations)
+####FastXML jackson: [annotations](https://github.com/FasterXML/jackson-annotations)
 
-####FastXML jackson: [main page:](https://github.com/FasterXML/jackson)
+####FastXML jackson: [main page](https://github.com/FasterXML/jackson)
 
 ###Other Resources:
 
-####Jersey [JSON documentation:] (https://jersey.java.net/documentation/latest/media.html#d0e7951)
+####Jersey [JSON documentation] (https://jersey.java.net/documentation/latest/media.html#d0e7951)
 
 ####Youtube: [Basic Demo which includes a decoding example and Class generation](https://www.youtube.com/watch?v=PARyHhklbgc)
 
