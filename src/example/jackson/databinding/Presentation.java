@@ -2,13 +2,30 @@ package example.jackson.databinding;
 
 // Do not create an parametrized constructor. Jackson requires an empty constructor
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonProperty;
+
 public class Presentation {
 
     private String date;
     private String time;
     private String presenterName;
 
+    // you can rename the JSON property using the @JsonProperty
+    @JsonProperty("topic")
     private String presentationTopic;
+
+    // If there are values which need to be hidden from json object
+    @JsonIgnore
+    private String privateValue;
+
+    public String getPrivateValue() {
+        return privateValue;
+    }
+
+    public void setPrivateValue(String privateValue) {
+        this.privateValue = privateValue;
+    }
 
     public String getDate() {
         return date;
