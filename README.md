@@ -23,7 +23,21 @@ public class Presentation {
     private String time;
     private String presenterName;
 
+    // you can rename the JSON property using the @JsonProperty
+    @JsonProperty("topic")
     private String presentationTopic;
+
+    // If there are values which need to be hidden from json object
+    @JsonIgnore
+    private String privateValue;
+
+    public String getPrivateValue() {
+        return privateValue;
+    }
+
+    public void setPrivateValue(String privateValue) {
+        this.privateValue = privateValue;
+    }
 
     public String getDate() {
         return date;
@@ -66,7 +80,6 @@ public class Presentation {
                 + "presentorTopic=" + this.presentationTopic;
 
     }
-}
 
 ```
 
